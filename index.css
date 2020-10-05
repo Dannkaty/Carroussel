@@ -1,0 +1,109 @@
+body{
+    font-family: 'Open Sans','Lato', sans-serif;
+}
+
+header{
+	width : 100%;
+	text-align: center;
+	font-size: 3em;
+	color: rgba(128,200,0,0.5);
+	background: linear-gradient(to top, rgba(255,128,0,0), rgba(255,255,0,1)) no-repeat;
+}
+
+footer{
+	width : 100%;
+	text-align: flex-start;
+	font-size: 1em;
+	color: black;
+	
+}
+
+.PRECEDENT, .SUIVANT{
+	color: green;
+	font-size: 3em;
+	cursor:  pointer; /*modifier le pointeur de la souris en main avec index pointé*/
+}
+
+.boutons{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.PRECEDENT:hover{
+  color: white;
+  background-color: #FFCC00;
+  border-radius: 10%;
+}
+
+.SUIVANT:hover{
+  color: white;
+  background-color: #FFCC00;
+  border-radius: 10%;
+}
+
+#bloc_carrousel{
+	display:flex;
+	flex-direction: row;
+	flex-wrap:wrap;
+	justify-content: center;
+}
+
+#carroussel{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+    
+}
+
+.gallerie{
+	display : flex;
+	flex-direction : row;
+	flex-wrap : wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+#carroussel img{
+	height : 200px;
+	width: auto;
+	position: relative;
+  	animation: dezoom 1s;
+}
+.gallerie img{
+	width : 100px; 
+}
+
+
+
+@keyframes dezoom {
+  from {height : 20px;}
+  to {height: 200px;}
+}
+
+
+#carrousel
+{
+    display: flex;   
+}
+.navigation 
+{
+	position: left;
+	bottom: 38px;
+	right : 5px;
+}
+.navigation button 
+{
+	background: blue;
+	color: white;
+	padding: 2px 4px;
+	cursor : pointer;
+}
+.navigation button: hover
+{
+	background: white ;
+	color : blue;
+}
+
+
+
